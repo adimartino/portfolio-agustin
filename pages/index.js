@@ -1,6 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
+const Button = ({ children }) => (
+  <button className="px-4 py-2 rounded-lg bg-white text-black text-sm hover:opacity-80 transition">
+    {children}
+  </button>
+);
 import Image from 'next/image';
 
 export default function Home() {
